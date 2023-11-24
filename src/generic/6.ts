@@ -16,8 +16,16 @@ type User = {
 
 function createOrUpdateUser(initialValues: Partial<User>) {
   // Оновлення користувача
+  return {
+    name: initialValues.name || "",
+    surname: initialValues.surname || "",
+    email: initialValues.email || "",
+    password: initialValues.password || "",
+  };
 }
 
-createOrUpdateUser({ email: "user@mail.com", password: "password123" });
+console.log(
+  createOrUpdateUser({ email: "user@mail.com", password: "password123" }),
+);
 
-export {};
+// export {};
