@@ -24,8 +24,10 @@ function createOrUpdateUser(initialValues: Partial<User>) {
   };
 }
 
-console.log(
-  createOrUpdateUser({ email: "user@mail.com", password: "password123" }),
-);
+createOrUpdateUser({ email: "user@mail.com", password: "password123" });
 
-// export {};
+// console.log(
+//   createOrUpdateUser({ email: "user@mail.com", password: "password123" }),
+// );
+
+export {};
