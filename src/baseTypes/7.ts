@@ -14,11 +14,8 @@ enum Days {
 }
 
 function isWeekend(day: Days): boolean {
-  if (day === Days.Sat || day === Days.Sun) {
-    return true;
-  } else {
-    return false;
-  }
+  return day === Days.Sat || day === Days.Sun;
 }
-const today = Days.Sat;
+
+const today = Days.Fri;
 console.log(isWeekend(today));

@@ -17,10 +17,7 @@ type User = {
 function createOrUpdateUser(initialValues: Partial<User>) {
   // Оновлення користувача
   return {
-    name: initialValues.name || "",
-    surname: initialValues.surname || "",
-    email: initialValues.email || "",
-    password: initialValues.password || "",
+    ...initialValues,
   };
 }
 
